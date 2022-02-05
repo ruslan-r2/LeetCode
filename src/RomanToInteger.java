@@ -56,20 +56,20 @@ public class RomanToInteger {
     }
 
     static public int romanToInt(String s) {
-        HashMap<String, Integer> romeNumeral = new HashMap<>();
-        romeNumeral.put("I", 1);
-        romeNumeral.put("V", 5);
-        romeNumeral.put("X", 10);
-        romeNumeral.put("L", 50);
-        romeNumeral.put("C", 100);
-        romeNumeral.put("D", 500);
-        romeNumeral.put("M", 1000);
+        HashMap<Character, Integer> romeNumeral = new HashMap<>();
+        romeNumeral.put('I', 1);
+        romeNumeral.put('V', 5);
+        romeNumeral.put('X', 10);
+        romeNumeral.put('L', 50);
+        romeNumeral.put('C', 100);
+        romeNumeral.put('D', 500);
+        romeNumeral.put('M', 1000);
 
         int result = 0;
         Integer temp = null;
 
         for (int i = s.length()-1; i >= 0 ; i--) {
-            String key = String.valueOf(s.charAt(i));
+            Character key = s.charAt(i);
             Integer number = romeNumeral.get(key);
 
             if (temp != null && number < temp) {
