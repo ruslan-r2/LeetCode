@@ -87,7 +87,7 @@ public class RemoveZeroSum {
                 //Обновляем ссылку после удаления
                 hashMap.get(pSum).setNext( head.getNext() );
 
-            }else{
+            } else {
                 hashMap.put(pSum, head);
             }
             head = head.getNext();
@@ -102,5 +102,4 @@ public class RemoveZeroSum {
             head = head.getNext();
         }
     }
-
 }
