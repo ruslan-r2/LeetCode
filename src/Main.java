@@ -17,8 +17,8 @@ public class Main {
             i++;
         }
 
-        // выводит файл в utf-8
-        // parser.getContent1();
+        //выводит файл в utf-8
+        parser.getContent1();
 
     }
 }
